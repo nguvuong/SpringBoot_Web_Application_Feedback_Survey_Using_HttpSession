@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+	<!-- Thymeleaf namespace should be added for template processing -->
+	<html lang="en" xmlns:th="http://www.thymeleaf.org">
+		<head>
+	    <meta charset="ISO-8859-1">
+	    <title>Product Catalog Management Application</title>
+	</head>
+	<body>
+		<form action="/processQuestion2" method="get">
+			<label class="pad_top">Question 2:</label>
+			<p th:text= "${session.q2.getQuestion()}" />
+			<label class="pad_top">Response:</label>
+			<input type="text" name="response2" required>
+			<label>&nbsp;</label>
+			<input type="submit" value="Submit Response"
+			class="margin_left">
+			<br>
+			<a href = "/index" >Cancel</a>
+		</form>
+		
+	</body>
+	</html>
